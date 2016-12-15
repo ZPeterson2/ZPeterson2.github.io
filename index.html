@@ -1,72 +1,229 @@
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
-<style>
-  .black-background {background-color: black}
-  h3 {font-family: Palatino Linotype;}
-</style>
+<!DOCTYPE html>
 <html lang="en">
-<body class="black-background">
-  
-<div class="container">
-  <div class="jumbotron">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="h1 text-center"  style="color: blue">Whitney Houston</div>
-        <div class="h3 text-center">The Queen of Pop</div>
-      </div>
-    </div>
-  </div>
-    <center>
-<a href="#Top">Life</a>
-&nbsp;|&nbsp;
-<a href="#Mid">Fame</a>
-&nbsp;|&nbsp;
-<a href="#Bot">Death</a>
-</center>
- </div> 
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="thumbnail">
-          <img class="gimg-responsive" 
-               src="https://fanart.tv/fanart/music/0307edfc-437c-4b48-8700-80680e66a228/albumcover/my-love-is-your-love-552d80d0476b2.JPG">
-          <center><div class="Whitney-album-art">Whitney Houston<br><em>My Love is Your Love</em></div></center>
-        </div>
-      </div>
-      <div class="col-xs-12">
-          <blockquote>
-            <p>"God gave me a voice to sing with, and when you have that, what other gimmick is there?"</p>
-            <footer>Whitney Houston</footer>
-          </blockquote>
-        </div>
-      </div>
- <div>
-        <div class="hideme" id="fade2">
-          <article class="thumbnail">
-            <a name="Top"><img class="img-responsive" src="https://butterflyexpressions.files.wordpress.com/2012/05/a-young-whitney-houston.jpg" alt="Whitney Houston Young"></a>
- <h3 class="text-center">Life</h3>
- <caption>Whitney Houston is The daughter of singer Cissy Houston. She was born in Westfield, NJ. She started singing at the age of 11 at her mothers Baptist church and went on to be a backup vocalist for musicians such as Chaka Khan, Dionne Warwick and Michael Zagar.</caption>
-          </article>
-        </div>
-      </div>
-   
-        <div class="hideme" id="fade2">
-          <article class="thumbnail">
-            <a name="Mid"><img class="img-responsive" src="http://www.hollywoodreporter.com/sites/default/files/imagecache/related_photogallery_182_height/2012/02/MBDBODY_EC013_Hcopy.jpg" alt="Bodyguard (1992) Whitney Houston and Kevin Costner"></a>
-            <h3 class="text-center">Fame</h3>
-            <caption>Houston shot to fame after signing her first record deal with Arista Records and releasing her self-titled album <i>Whitney Houston</i>. Houston's first acting role was as the star of the feature film The Bodyguard (1992). The film's original soundtrack won a Grammy Award in 1994 for Album of the Year and remains the best-selling single by a woman in music history.</caption>
-          </article>
-        </div>
-   
-        <div class="hideme" id="fade3">
-          <article class="thumbnail">
-           <a name="Bot"><img class="img-responsive" src="http://rack.0.mshcdn.com/media/ZgkyMDEyLzEyLzA0LzU1L3R3aXR0ZXJicmVhLmJNZi5qcGcKcAl0aHVtYgk5NTB4NTM0IwplCWpwZw/bf3b971c/519/twitter-breaks-news-of-whitney-houston-death-27-minutes-before-press-8ffe9cd9ce.jpg" alt="Whitney I Look To You"></a>
-            <h3 class="text-center">Last moments</h3>
-            <caption>Houston was found dead in her hotel room at the Beverly Hilton in Los Angeles on February 11, 2012. The cause of her death was initially thought to be accidental drowning. Leter on the coroner concluded that while drowing was the main cause of death, it was heart problems and years of drug use that ultimately lead to Houston's death.</caption>
-          </article>
-        </div>
-    <div>
-      <div class="col-xs-12">
-        <h3>If you would like to learn more about Whitney Houston, her life and career, visit her <a href="https://en.wikipedia.org/wiki/Whitney_Houston" target="_blank">Wikipedia</a>.</h3>
-      </div>
-  </div>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<style>
+
+body
+{
+   font-family: Times New Roman;
+    background-image: url(https://www.sarmy.org.au/Global/SArmy/Resources/powerpoints/salvo/christmas-gift/ChristmasLoop-01-16x9.jpg);
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed;
+
+}
+h1 {
+      text-align: center;
+    font-family: Rockwell; cursive;
+    background-color: gray;
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    padding: 2px 0px;
+    border-radius: 10px;
+}
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+    background: whitesmoke;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+input {
+    margin: 5px 10px;
+}
+button {
+    width: 55px;
+    padding-left:5px;
+    padding-right: 5px;
+    position: relative;
+    float:center;
+    background-color: #DCDCDC;
+    color: black;
+  margin: 0 2px 0 2px;}
+  #submit {
+      background: silver}
+  #reset {
+      background: silver;
+  }
+#answer {
+    border: 5px dashed #ccc;
+    background: #ccc;
+    padding: 10px;
+}
+  #container {
+    width:50%;
+    margin:auto;
+    padding: 0 25px 40px 10px;
+    background-color: silver;
+    border:4px solid #B0E0E6;
+    border-radius:5px;
+    color: #1E90FF;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px #888;
+}
+</style>
+<body>
+    <script type="text/javascript">
+/////////////////////////////////////////////////////////
+// Javascript made by http://peters1.dk/tools/snow.php //
+/////////////////////////////////////////////////////////
+
+snow_img = "file:///Users/zaquonya/Documents/snowflake.png";
+
+snow_no = 25;
+
+if (typeof(window.pageYOffset) == "number")
+{
+	snow_browser_width = window.innerWidth;
+	snow_browser_height = window.innerHeight;
+}
+else if (document.body && (document.body.scrollLeft || document.body.scrollTop))
+{
+	snow_browser_width = document.body.offsetWidth;
+	snow_browser_height = document.body.offsetHeight;
+}
+else if (document.documentElement && (document.documentElement.scrollLeft || document.documentElement.scrollTop))
+{
+	snow_browser_width = document.documentElement.offsetWidth;
+	snow_browser_height = document.documentElement.offsetHeight;
+}
+else
+{
+	snow_browser_width = 500;
+	snow_browser_height = 500;
+}
+
+snow_dx = [];
+snow_xp = [];
+snow_yp = [];
+snow_am = [];
+snow_stx = [];
+snow_sty = [];
+
+for (i = 0; i < snow_no; i++)
+{
+	snow_dx[i] = 0;
+	snow_xp[i] = Math.random()*(snow_browser_width-50);
+	snow_yp[i] = Math.random()*snow_browser_height;
+	snow_am[i] = Math.random()*20;
+	snow_stx[i] = 0.02 + Math.random()/10;
+	snow_sty[i] = 0.7 + Math.random();
+	if (i > 0) document.write("<\div id=\"snow_flake"+ i +"\" style=\"position:absolute;z-index:"+i+"\"><\img src=\""+snow_img+"\" border=\"0\"><\/div>"); else document.write("<\div id=\"snow_flake0\" style=\"position:absolute;z-index:0\"><a href=\"http://peters1.dk/tools/snow.php\" target=\"_blank\"><\img src=\""+snow_img+"\" border=\"0\"></a><\/div>");
+}
+
+function SnowStart()
+{
+	for (i = 0; i < snow_no; i++)
+	{
+		snow_yp[i] += snow_sty[i];
+		if (snow_yp[i] > snow_browser_height-50)
+		{
+			snow_xp[i] = Math.random()*(snow_browser_width-snow_am[i]-30);
+			snow_yp[i] = 0;
+			snow_stx[i] = 0.02 + Math.random()/10;
+			snow_sty[i] = 0.7 + Math.random();
+		}
+		snow_dx[i] += snow_stx[i];
+		document.getElementById("snow_flake"+i).style.top=snow_yp[i]+"px";
+		document.getElementById("snow_flake"+i).style.left=snow_xp[i] + snow_am[i]*Math.sin(snow_dx[i])+"px";
+	}
+	snow_time = setTimeout("SnowStart()", 10);
+}
+SnowStart();
+</script>
+ <div id='container'>
+			<div id='title'>
+        <h1>The Gift Idea Genie</h1>
+   </div>
+
+   <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+		<script type="text/javascript" src='questions.json'></script>
+		<script type='text/javascript' src='jsquiz.js'></script>
+
+    <form name="quiz" action="javascript:check();">
+    <p>Are you shopping for a Boy or Girl?</p>
+    <input type="radio" name="q1" value="c1"> Boy<br>
+    <input type="radio" name="q1" value="c2"> Girl<br><br>
+
+
+    <p>What is their age?</p>
+    <input type="radio" name="q2" value="c1"> Child<br>
+    <input type="radio" name="q2" value="c2"> Adult<br><br>
+
+
+    <p>What is their relation to you?</p>
+    <input type="radio" name="q3" value="c1"> Family<br>
+    <input type="radio" name="q3" value="c2"> Friend<br>
+ <input type="radio" name="q3" value="c3"> None<br><br>
+
+    <p>What is their favorite color?</p>
+    <input type="radio" name="q4" value="c1"> Red<br>
+      <input type="radio" name="q4" value="c1"> pink<br>
+    <input type="radio" name="q4" value="c2"> Yellow<br>
+<input type="radio" name="q4" value="c1"> How should I know?<br><br>
+
+    <p>Which is their favorite pasttime?</p>
+    <input type="radio" name="q5" value="c2"> Going to the movies<br>
+     <input type="radio" name="q5" value="c1"> playing outside<br>
+    <input type="radio" name="q5" value="c2"> Reading a book<br>
+   <input type="radio" name="q5" value="c3"> I don't know them that well<br><br>
+
+    <button type="button" id="submit" onclick="tabulateAnswers()">Submit</button>
+    <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+  </form><br>
+       <div id="answer">And the results are...</div>
+  </body>
 </body>
+<script type="text/javascript">
+function tabulateAnswers(){
+    var c1score = 0;
+    var c2score = 0;
+    var c3score = 0;
+    var c4score = 0;
+
+    var choices = document.getElementsByTagName('input');
+    for (var i=0; i<choices.length; i++) {
+        if (choices[i].checked) {
+            if (choices[i].value == 'c1') {
+                c1score = c1score + 1;
+            }
+            if (choices[i].value == 'c2') {
+                c2score = c2score + 1;
+            }
+            if (choices[i].value == 'c3') {
+                c3score = c3score + 1;
+            }
+            if (choices[i].value == 'c4') {
+                c4score = c4score + 1;
+            }
+                    }
+    }
+
+    var maxScore = Math.max(c1score,c2score,c3score,c4score);
+
+    var answerBox = document.getElementById('answer');{
+        if (c1score == maxScore) {
+            answerBox.innerHTML = 'The best present would be a toy. The best place to shop would be Toys R Us';
+        }
+        if (c2score == maxScore) {
+            answerBox.innerHTML = 'A GiftCard to their favorite store is best. It shows you know what they like.';
+        }
+        if (c3score == maxScore) {
+            answerBox.innerHTML = 'Stick with cash. You dont know them very well and you can never go wrong with giving cash.';
+        }
+    }
+}
+function resetAnswer() {
+    var answerbox = document.getElementById('answer');
+    answerbox.innerHTML = "And the results are...";
+}
+</script>
+
 </html>
